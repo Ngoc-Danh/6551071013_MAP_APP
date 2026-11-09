@@ -10,9 +10,11 @@
         "dependencies": {
           "ClosedXML": "0.105.1",
           "EntityFramework": "6.5.2",
+          "FastReport.DataVisualization": "2026.2.8",
           "Microsoft.EntityFrameworkCore": "10.0.14",
           "Microsoft.EntityFrameworkCore.Design": "10.0.14",
-          "Microsoft.EntityFrameworkCore.SqlServer": "10.0.14"
+          "Microsoft.EntityFrameworkCore.SqlServer": "10.0.14",
+          "iTextSharp.LGPLv2.Core": "3.8.7"
         },
         "runtime": {
           "HotelManagement.dll": {}
@@ -43,6 +45,15 @@
             "assemblyVersion": "1.17.1.0",
             "fileVersion": "1.1700.125.56903",
             "localPath": "Azure.Identity.dll"
+          }
+        }
+      },
+      "BouncyCastle.Cryptography/2.7.0": {
+        "runtime": {
+          "lib/net6.0/BouncyCastle.Cryptography.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.7.0.16391",
+            "localPath": "BouncyCastle.Cryptography.dll"
           }
         }
       },
@@ -118,12 +129,50 @@
           }
         }
       },
+      "FastReport.Compat/2026.2.8": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.CSharp": "5.0.0",
+          "Microsoft.CodeAnalysis.VisualBasic": "4.0.1"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/FastReport.Compat.dll": {
+            "assemblyVersion": "2026.2.8.0",
+            "fileVersion": "2026.2.8.0",
+            "localPath": "FastReport.Compat.dll"
+          }
+        }
+      },
+      "FastReport.DataVisualization/2026.2.8": {
+        "dependencies": {
+          "FastReport.Compat": "2026.2.8"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/FastReport.DataVisualization.dll": {
+            "assemblyVersion": "2026.2.8.0",
+            "fileVersion": "2026.2.8.0",
+            "localPath": "FastReport.DataVisualization.dll"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190",
             "localPath": "Humanizer.dll"
+          }
+        }
+      },
+      "iTextSharp.LGPLv2.Core/3.8.7": {
+        "dependencies": {
+          "BouncyCastle.Cryptography": "2.7.0",
+          "SkiaSharp": "4.154.0"
+        },
+        "runtime": {
+          "lib/net10.0/iTextSharp.LGPLv2.Core.dll": {
+            "assemblyVersion": "3.8.7.0",
+            "fileVersion": "3.8.7.0",
+            "localPath": "iTextSharp.LGPLv2.Core.dll"
           }
         }
       },
@@ -341,6 +390,72 @@
           "lib/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
             "locale": "zh-Hant",
             "localPath": "zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll"
+          }
+        }
+      },
+      "Microsoft.CodeAnalysis.VisualBasic/4.0.1": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "5.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.VisualBasic.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.121.55815",
+            "localPath": "Microsoft.CodeAnalysis.VisualBasic.dll"
+          }
+        },
+        "resources": {
+          "lib/netcoreapp3.1/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "cs",
+            "localPath": "cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll"
+          },
+          "lib/netcoreapp3.1/de/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "de",
+            "localPath": "de/Microsoft.CodeAnalysis.VisualBasic.resources.dll"
+          },
+          "lib/netcoreapp3.1/es/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "es",
+            "localPath": "es/Microsoft.CodeAnalysis.VisualBasic.resources.dll"
+          },
+          "lib/netcoreapp3.1/fr/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "fr",
+            "localPath": "fr/Microsoft.CodeAnalysis.VisualBasic.resources.dll"
+          },
+          "lib/netcoreapp3.1/it/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "it",
+            "localPath": "it/Microsoft.CodeAnalysis.VisualBasic.resources.dll"
+          },
+          "lib/netcoreapp3.1/ja/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "ja",
+            "localPath": "ja/Microsoft.CodeAnalysis.VisualBasic.resources.dll"
+          },
+          "lib/netcoreapp3.1/ko/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "ko",
+            "localPath": "ko/Microsoft.CodeAnalysis.VisualBasic.resources.dll"
+          },
+          "lib/netcoreapp3.1/pl/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "pl",
+            "localPath": "pl/Microsoft.CodeAnalysis.VisualBasic.resources.dll"
+          },
+          "lib/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "pt-BR",
+            "localPath": "pt-BR/Microsoft.CodeAnalysis.VisualBasic.resources.dll"
+          },
+          "lib/netcoreapp3.1/ru/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "ru",
+            "localPath": "ru/Microsoft.CodeAnalysis.VisualBasic.resources.dll"
+          },
+          "lib/netcoreapp3.1/tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "tr",
+            "localPath": "tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll"
+          },
+          "lib/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "zh-Hans",
+            "localPath": "zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll"
+          },
+          "lib/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll": {
+            "locale": "zh-Hant",
+            "localPath": "zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll"
           }
         }
       },
@@ -1046,6 +1161,69 @@
           }
         }
       },
+      "SkiaSharp/4.154.0": {
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "4.154.0",
+          "SkiaSharp.NativeAssets.macOS": "4.154.0"
+        },
+        "runtime": {
+          "lib/net10.0/SkiaSharp.dll": {
+            "assemblyVersion": "4.154.0.0",
+            "fileVersion": "4.154.0.0",
+            "localPath": "SkiaSharp.dll"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.macOS/4.154.0": {
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/osx/native/libSkiaSharp.dylib"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/4.154.0": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-arm64/native/libSkiaSharp.dll"
+          },
+          "runtimes/win-arm64/native/libSkiaSharp.pdb": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-arm64/native/libSkiaSharp.pdb"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-x64/native/libSkiaSharp.dll"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.pdb": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-x64/native/libSkiaSharp.pdb"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-x86/native/libSkiaSharp.dll"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.pdb": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-x86/native/libSkiaSharp.pdb"
+          }
+        }
+      },
       "System.ClientModel/1.8.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "10.0.14",
@@ -1196,6 +1374,13 @@
       "path": "azure.identity/1.17.1",
       "hashPath": "azure.identity.1.17.1.nupkg.sha512"
     },
+    "BouncyCastle.Cryptography/2.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-U+12df8UEWHgBi04YVf/Lgi2dy3SItlIYvHjjEVa/BngCQIzDCDRBk50DDByCfDvSbe5pRNFr3b7UrVK2kMcLw==",
+      "path": "bouncycastle.cryptography/2.7.0",
+      "hashPath": "bouncycastle.cryptography.2.7.0.nupkg.sha512"
+    },
     "ClosedXML/0.105.1": {
       "type": "package",
       "serviceable": true,
@@ -1238,12 +1423,33 @@
       "path": "excelnumberformat/1.1.0",
       "hashPath": "excelnumberformat.1.1.0.nupkg.sha512"
     },
+    "FastReport.Compat/2026.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AKmxdrhWBEPIxkLI4olfIzEHyPFxtcdE5p7SHJCsM2/XBCQxBUEoM819tFrk4oS0tFkE66DTNqTGvO7rUIjv8A==",
+      "path": "fastreport.compat/2026.2.8",
+      "hashPath": "fastreport.compat.2026.2.8.nupkg.sha512"
+    },
+    "FastReport.DataVisualization/2026.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NZJP9dShBCUSR8M2QKzPD3towLVwbaLihj7WvdcQVA2xQ04eIi6ZxTCre3WvcyO2Jv3OyaJtTNnyzftxnn5zHQ==",
+      "path": "fastreport.datavisualization/2026.2.8",
+      "hashPath": "fastreport.datavisualization.2026.2.8.nupkg.sha512"
+    },
     "Humanizer.Core/2.14.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
+    },
+    "iTextSharp.LGPLv2.Core/3.8.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-t8/hiJ/XgWTemaqnW3LToIaOTg83k05U9JAe3zDn101MUFHZh6peCpbBLQUrSAXE0nSXm5EjfP/YYq294xHpkg==",
+      "path": "itextsharp.lgplv2.core/3.8.7",
+      "hashPath": "itextsharp.lgplv2.core.3.8.7.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/8.0.0": {
       "type": "package",
@@ -1279,6 +1485,13 @@
       "sha512": "sha512-Al/Q8B+yO8odSqGVpSvrShMFDvlQdIBU//F3E6Rb0YdiLSALE9wh/pvozPNnfmh5HDnvU+mkmSjpz4hQO++jaA==",
       "path": "microsoft.codeanalysis.csharp.workspaces/5.0.0",
       "hashPath": "microsoft.codeanalysis.csharp.workspaces.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.VisualBasic/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-o67w8S4zO7tQvB0EQeeo7i5uJCT/CrLwnLUWkkbxU2aUsZPGuRd35diuqk7e+vwnfhu27AvNJsr+1Z6EUT+fDA==",
+      "path": "microsoft.codeanalysis.visualbasic/4.0.1",
+      "hashPath": "microsoft.codeanalysis.visualbasic.4.0.1.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.Workspaces.Common/5.0.0": {
       "type": "package",
@@ -1552,6 +1765,27 @@
       "sha512": "sha512-LFQsCZlV0xlUyXAOMUo5kkSl+8zAQXXbbdwWchtk0B4o7zotZhQsQOcJUELGHdfPfm/xDAsz6hONAuV25bJaAg==",
       "path": "sixlabors.fonts/1.0.0",
       "hashPath": "sixlabors.fonts.1.0.0.nupkg.sha512"
+    },
+    "SkiaSharp/4.154.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-R3BuszJ3tUFmni37nZIRawXL0yx+XHyx7xi1716/0TybuEQFhnBx48Ig3rFpeVFQVytpGpJZZ+NLW9d9UPG7EA==",
+      "path": "skiasharp/4.154.0",
+      "hashPath": "skiasharp.4.154.0.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.macOS/4.154.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GgYL4ML3HT4CW33oXMHdp7BSRU87bPUfWBXdYgNduGlt4GAbAM/3eXcjjUdilS0H1r2R5iBhwvExCfSYGwFKlw==",
+      "path": "skiasharp.nativeassets.macos/4.154.0",
+      "hashPath": "skiasharp.nativeassets.macos.4.154.0.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.Win32/4.154.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GXgoY77GCXdPcveNAmy8o3gVit8sp6YtnI88h5camLPfihjulwJUajZXKhgVuZ8RhuwSTgfyt/00Dx8HRUSeAA==",
+      "path": "skiasharp.nativeassets.win32/4.154.0",
+      "hashPath": "skiasharp.nativeassets.win32.4.154.0.nupkg.sha512"
     },
     "System.ClientModel/1.8.0": {
       "type": "package",

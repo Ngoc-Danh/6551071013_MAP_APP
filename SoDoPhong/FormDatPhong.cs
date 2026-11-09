@@ -580,7 +580,7 @@ namespace HotelManagement.SoDoPhong
                     5
                 );
 
-                db.PhieuThues.Add(new PhieuThue
+                db.PhieuThues.Add(new HotelManagement.Models.PhieuThue
                 {
                     MaPt = maPT,
                     NgPt = DateTime.Now,

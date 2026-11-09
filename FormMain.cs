@@ -34,7 +34,8 @@ namespace HotelManagement
 
         private void button13_Click(object sender, EventArgs e)
         {
-            HienThiDangPhatTrien("Thống kê");
+            Form formCon = new ThongKe.FormThongKe();
+            LoadFormCon(formCon);
         }
 
         private void btnTrangChu_Click(object sender, EventArgs e)
@@ -45,8 +46,15 @@ namespace HotelManagement
 
         private void button5_Click(object sender, EventArgs e)
         {
-            HienThiDangPhatTrien("Danh sách tài khoản");
+            Form formCon = new TaiKhoan.FormDanhSachTaiKhoan();
+            formCon.TopLevel = false;
+            formCon.FormBorderStyle = FormBorderStyle.None;
+            formCon.Dock = DockStyle.Fill;
+            XoaNoiDungPanelMain();
+            panelMain.Controls.Add(formCon);
+            formCon.Show();
         }
+
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -117,13 +125,26 @@ namespace HotelManagement
 
         private void button9_Click(object sender, EventArgs e)
         {
-            HienThiDangPhatTrien("Danh sách đặt phòng");
+            Form formCon = new PhieuThue.FormDanhSachPhieuThue();
+            formCon.TopLevel = false;
+            formCon.FormBorderStyle = FormBorderStyle.None;
+            formCon.Dock = DockStyle.Fill;
+            XoaNoiDungPanelMain();
+            panelMain.Controls.Add(formCon);
+            formCon.Show();
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            HienThiDangPhatTrien("Danh sách hóa đơn");
+            Form formCon = new HoaDon.FormDanhSachHoaDon();
+            formCon.TopLevel = false;
+            formCon.FormBorderStyle = FormBorderStyle.None;
+            formCon.Dock = DockStyle.Fill;
+            XoaNoiDungPanelMain(); // hàm có trong bản FormMain mình gửi trước; nếu chưa có, dùng panelMain.Controls.Clear();
+            panelMain.Controls.Add(formCon);
+            formCon.Show();
         }
+
 
         private void FormMain_Load(object sender, EventArgs e)
         {
